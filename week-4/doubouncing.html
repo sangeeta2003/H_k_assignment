@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+async function debouning(){
+    let timeout;
+    clearTimeout();
+
+    timeout = setTimeout(function(){
+populateDiv
+    },1000);
+
+    async function populateDiv(){
+        const a = document.getElementById("firstNumber").value;
+        const b = document.getElementById("LastNumber").value;
+
+        const response = await fetch('');
+        const ans = await res.text();
+        document.getElementById(finalSum).innerHTML = ans;
+    }
+
+}
+</script>
+
+
+<body>
+    <input id="firstNumber" type="text" placeholder="First Number"/>
+    <br>
+    <input id="LastNumber" type="text" placeholder="Last Number"/>
+    <br>
+    <div id="finalSum"></div>
+</body>
+</html>
